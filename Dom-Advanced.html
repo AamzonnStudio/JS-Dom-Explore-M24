@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dom Explore </title>
+</head>
+<body>
+<!-- header part: -->
+    <header></header>
+
+<!-- Main part -->
+
+    <main>
+        <section>
+            <artical>
+                <h1 id="First-Title">hello-Everyone-1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus libero soluta quos quas iusto nemo odit perferendis sapiente odio aliquam.</p>
+            </artical>
+            <artical>
+                <h1>hello-Everyone-2</h1>
+                <p id="second-Paragraph">Fugiat, commodi? Omnis eveniet eius hic inventore aspernatur blanditiis repudiandae. Laudantium voluptate qui blanditiis non nam harum provident earum quisquam.</p>
+            </artical>
+            <artical>
+                <h1>hello-Everyone-3</h1>
+                <p>Fugit soluta sequi, fuga est libero dolorum nesciunt ipsam et quidem quo harum praesentium nisi voluptas, quae illum iste fugiat!</p>
+            </artical>
+            <artical>
+                <h1>hello-Everyone-4</h1>
+                <p>Labore dolorum delectus quas ut quisquam at perferendis neque quasi veritatis vitae ex minima non, repellendus ipsum nobis fugiat voluptas?</p>
+            </artical>
+            <artical>
+                <h1>hello-Everyone-5</h1>
+                <p>Quis mollitia officiis consectetur optio reprehenderit quo nesciunt voluptatibus? Vero temporibus velit itaque porro facere reprehenderit dolore? Sit, sapiente ut?</p>
+            </artical>
+        </section>
+    </main>
+
+<!-- Javascript Part : -->
+<script>
+
+    // Explained Dom Object Concept 
+        const Student = {
+            name : 'Nasim',
+            id : 121 ,
+            nationality : 'Bangladesh',
+            Home : 'Sylhet'
+        }
+
+    // Find Tag Collection & Looping on it  
+    // blogHeadline :
+        const blogHeadline = document.getElementsByTagName('h1');
+        for (const h1 of blogHeadline) {
+            // console.log(h1);
+        }
+
+    // blogParagraph :
+        const blogDetails = document.getElementsByTagName('p');
+        console.log(blogDetails);
+        for (const p of blogDetails) {
+            // console.log( p.innerText );
+        }
+    // Explore GetElementBy Id using Browser & VS Code 
+    const firstTitle = document.getElementById('First-Title');
+    firstTitle.style.backgroundColor =  'green' ;
+    firstTitle.style.color = ' black';
+
+</script>
+
+</body>
+</html>
